@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="courseworkcss.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="courseworkjs.js"></script>
+    <div id="DIV" class="header">
+        <h2>Список дел</h2>
+        <input type="text" id="name2" placeholder="Название..." required>
+        <input type="text" id="descrip" placeholder="Описание..." required>
+        <input type="text" id="deadline" placeholder="Дедлайн..." required>
+        <span onclick="newElement()" class="addBtn">Добавить</span>
+        <h3>Сортировать по:</h3>
+        <button id="sortdate" class="filterdate">дате создания</button>
+        <button id="sortalph" class="filteralph">названию(алфавиту)</button>
+        <h3>Фильтровать по:</h3>
+        <button id="filtstat">статусу</button>
+        <button id="filttag">тегу</button>
+        <button id="filtdate">дате</button>
+        <button id="filtline">дедлайну</button>
+      </div>
+      <ul id="UL">
+      </ul>
+</body>
+</html>
